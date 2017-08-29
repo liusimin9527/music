@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	header
+		.search
+			input#search-text(type='text', placeholder='请输入歌手或歌曲名')
+			button#search-btn
+	.container
+		.musicBox
+			#lry-show 听说白雪公主在逃跑
+		.musicPlayer
+			.player-left
+				button#prev
+				button#play
+				button#next
+			.player-middle
+				.song-info
+					span#song-name 童话镇-萧忆情.mp3
+					span#current-time 00:00
+					span.or /
+					span#duration-time 04:10
+				.process
+					.process-bar
+					.bar
+					button.bar-btn
+			.player-right
+	
+	script(type='javascript', src='/javascripts/util.js')
+	script(type='javascript', src='/javascripts/music.js')
+	script(type='javascript', src='/javascripts/main.js')
