@@ -1,55 +1,173 @@
 extends layout
 
 block content
-	.main
-		.mod_singer_tag
-			.singer_tag__list.js_area
-				a(href="javascript:;").singer_tag__item
-				a(href="javascript:;", hidefocus).singer_tag__item 华语男
-				a(href="javascript:;", hidefocus).singer_tag__item 华语女
-				a(href="javascript:;", hidefocus).singer_tag__item 华语组合
-				a(href="javascript:;", hidefocus).singer_tag__item 韩国男
-				a(href="javascript:;", hidefocus).singer_tag__item 韩国女
-				a(href="javascript:;", hidefocus).singer_tag__item 韩国组合
-				a(href="javascript:;", hidefocus).singer_tag__item 日本男
-				a(href="javascript:;", hidefocus).singer_tag__item 日本女
-				a(href="javascript:;", hidefocus).singer_tag__item 日本组合
-				a(href="javascript:;", hidefocus).singer_tag__item 欧美男
-				a(href="javascript:;", hidefocus).singer_tag__item 欧美女
-				a(href="javascript:;", hidefocus).singer_tag__item 欧美组合
-				a(href="javascript:;", hidefocus).singer_tag__item 乐团
-				a(href="javascript:;", hidefocus).singer_tag__item 演奏家
-				a(href="javascript:;", hidefocus).singer_tag__item 作曲家
-				a(href="javascript:;", hidefocus).singer_tag__item 指挥家
-				a(href="javascript:;", hidefocus).singer_tag__item 其它
-			.singer_tag__list.js_letter
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-				a(href="")
-		#mod_singerlist
-			.mod_singer_list
-				ul.singer_list__list
-			ul.singer_list_txt
-			.mod_page_nav.js_pager
+	body.os_mac
+		include ./public/head.jade
+		.mod_singer_push.js_my_singers_nologin
+			.section_inner
+				h2.singer_push__tit
+					i.icon_txt 万千歌手，尽在眼前
+				.singer_push__desc
+					i.icon_txt 登录查看你关注的歌手
+				a(href="javascript:;").singer_push_btn.js_login 立即登录
+					span.singer_push_btn_border
+		.mod_singer_push.mod_slide_box.js_my_singers(style="display: none")
+			.section_inner
+				.singer_push_tab
+					span(href="").singer_push_tab__item.singer_push_tab__item--on 我关注的歌手
+				.mod_slide.singer_push_slide
+					a.slider__prev.js_jump
+						i.icon_txt 上一页
+					a.slider__next.js_jump
+						i.ixon_txt 下一页
+					ul.singer_push_list.slide_list
+				.mod_slide_switch.js_switch
+		.main
+			.mod_singer_tag
+				.singer_tag__list.js_area
+					a(href="javascript:;").singer_tag__item.singer_tag__item--all.singer_tag__item--select 全部
+					a(href="javascript:;", hidefocus).singer_tag__item 华语男
+					a(href="javascript:;", hidefocus).singer_tag__item 华语女
+					a(href="javascript:;", hidefocus).singer_tag__item 华语组合
+					a(href="javascript:;", hidefocus).singer_tag__item 韩国男
+					a(href="javascript:;", hidefocus).singer_tag__item 韩国女
+					a(href="javascript:;", hidefocus).singer_tag__item 韩国组合
+					a(href="javascript:;", hidefocus).singer_tag__item 日本男
+					a(href="javascript:;", hidefocus).singer_tag__item 日本女
+					a(href="javascript:;", hidefocus).singer_tag__item 日本组合
+					a(href="javascript:;", hidefocus).singer_tag__item 欧美男
+					a(href="javascript:;", hidefocus).singer_tag__item 欧美女
+					a(href="javascript:;", hidefocus).singer_tag__item 欧美组合
+					a(href="javascript:;", hidefocus).singer_tag__item 乐团
+					a(href="javascript:;", hidefocus).singer_tag__item 演奏家
+					a(href="javascript:;", hidefocus).singer_tag__item 作曲家
+					a(href="javascript:;", hidefocus).singer_tag__item 指挥家
+					a(href="javascript:;", hidefocus).singer_tag__item 其它
+				.singer_tag__list.js_letter
+					a(href="javascript:;", hidefocus).singer_tag__item.singer_tag__item--all.singer_tag__item--select 热门
+					a(href="javascript:;", hidefocus).singer_tag__item A
+					a(href="javascript:;", hidefocus).singer_tag__item B
+					a(href="javascript:;", hidefocus).singer_tag__item C
+					a(href="javascript:;", hidefocus).singer_tag__item D
+					a(href="javascript:;", hidefocus).singer_tag__item E
+					a(href="javascript:;", hidefocus).singer_tag__item F
+					a(href="javascript:;", hidefocus).singer_tag__item G
+					a(href="javascript:;", hidefocus).singer_tag__item H
+					a(href="javascript:;", hidefocus).singer_tag__item I
+					a(href="javascript:;", hidefocus).singer_tag__item J
+					a(href="javascript:;", hidefocus).singer_tag__item K
+					a(href="javascript:;", hidefocus).singer_tag__item L
+					a(href="javascript:;", hidefocus).singer_tag__item M
+					a(href="javascript:;", hidefocus).singer_tag__item N
+					a(href="javascript:;", hidefocus).singer_tag__item O
+					a(href="javascript:;", hidefocus).singer_tag__item P
+					a(href="javascript:;", hidefocus).singer_tag__item Q
+					a(href="javascript:;", hidefocus).singer_tag__item R
+					a(href="javascript:;", hidefocus).singer_tag__item S
+					a(href="javascript:;", hidefocus).singer_tag__item T
+					a(href="javascript:;", hidefocus).singer_tag__item U
+					a(href="javascript:;", hidefocus).singer_tag__item V
+					a(href="javascript:;", hidefocus).singer_tag__item W
+					a(href="javascript:;", hidefocus).singer_tag__item X
+					a(href="javascript:;", hidefocus).singer_tag__item Y
+					a(href="javascript:;", hidefocus).singer_tag__item Z
+					a(href="javascript:;", hidefocus).singer_tag__item #
+			#mod_singerlist
+				.mod_singer_list
+					ul.singer_list__list
+				ul.singer_list_txt
+				include ./public/page.jade
+					
+		include ./public/foot.jade
+		include ./public/bottom.jade
+		style.
+			.mod_singer_push {
+				position: relative;
+				width: 100%;
+				height: 376px;
+				background: url(/images/bg_singer.jpg) 50% 0 repeat-x;
+				overflow: hidden;
+			}
+			.singer_push__desc,
+			 .singer_push__tit {
+				margin-left: auto;
+				margin-right: auto;
+				background-image: url(/images/singer_tit.png);
+				background-image: -webkit-image-set(url(/images/singer_tit.png));
+			}
+			.singer_push__tit {
+				width: 494px;
+				height: 60px;
+				margin-top: 103px;
+				background-position: 0 0;
+			}
+			.singer_push__desc {
+				width: 260px;
+				height: 26px;
+				margin-top: 20px;
+				background-position: 0 -70px;
+			}
+			.singer_push_btn {
+				position: relative;
+				display: block;
+				margin: 20px auto 0;
+				font-size: 18px;
+				text-align: center;
+				color: #fff;
+				line-height: 48px;
+				width: 174px;
+				background-color: transparent;
+				border: 0 none;
+			}
+			.singer_push_btn_border {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border-radius: 2px;
+				border: 1px solid #fff;
+				opacity: .2;
+				filter: alpha(opacity=20);
+				transition-property: opacity;
+				transition-duration: .3s;
+			}
+			.singer_push_tab {
+				text-align: center;
+				padding: 60px 0 44px;
+				line-height: 22px;
+			}
+			.main {
+				z-index: 2;
+			}
+			.mod_singer_tag {
+				background-color: #fbfbfb;
+				padding: 34px 0 17px 40px;
+				margin: 30px 0 20px;
+			}
+			.singer_tag__list {
+				padding-bottom: 3px;
+				height: auto;
+				zoom: 1;
+				clear: both;
+				overflow: hidden;
+			}
+			.singer_tag__item--select, 
+			.singer_tag__item--select:hover {
+				background-color: #31c27c;
+				color: #fff;
+			} 
+			.singer_tag__item--all {
+				margin-right: 28px;
+			}
+			.singer_tag__item {
+				height: 26px;
+				line-height: 27px;
+				overflow: hidden;
+			}
+			.singer_tag__item {
+				float: left;
+				line-height: 26px;
+				padding: 0 8px;
+				margin: 0 12px 14px 0;
+			}
