@@ -1,0 +1,325 @@
+.mod_header
+	.section_inner
+		h1.qqmusic_title
+			a(href="/music")
+				img(src="../images/logo.png", alt="QQ音乐").qqmusic_logo
+		ul.mod_top_nav
+			li.top_nav__item
+				a(href="/", title="音乐馆").top_nav__link.top_nav__link--current 音乐馆
+			li.top_nav__item 
+				a(href="/portal/profile.html", title="我的音乐").top_nav__link 我的音乐
+			li.top_nav__item 
+				a(href="/", title="客户端").top_nav__link 客户端
+			li.top_nav__item 
+				a(href="", title="音乐号").top_nav__link 音乐号
+			li.top_nav__item 
+				a(href="/", title="VIP").top_nav__link	VIP	
+		ul.mod_top_subnav
+			li.top_subnav__item
+				a(href="/").top_subnav__link 首页
+			li.top_subnav__item
+				a(href="/portal/singer_list.html").top_subnav__link 歌手
+			li.top_subnav__item
+				a(href="/portal/album_lib.html").top_subnav__link 专辑
+			li.top_subnav__item
+				a(href="").top_subnav__link 排行榜
+			li.top_subnav__item
+				a(href="/portal/playlist.html").top_subnav__link 分类歌单
+			li.top_subnav__item
+				a(href="").top_subnav__link 电台
+			li.top_subnav__item
+				a(href="").top_subnav__link MV	
+			li.top_subnav__item
+				a(href="").top_subnav__link 数字专辑
+		.mod_top_search
+			.mod_search_input
+				input.search_input__input(type='text', placeholder="搜索关键字", aria-label="请输入搜索内容")
+				button.search_input__btn
+					i.icon-search
+					span.icon-txt 搜索
+			.js_smartbox
+				.mod_search_other
+					.search_hot
+						dl.search_hot__list
+							dt.search_hot__tit 热门搜索
+								dd
+									a(href="javascript:;").search_hot__link.js_smartbox_search.js_link
+										span.search_hot__number
+										span.search_hot__name
+										span.search_hot__listen
+									a(href="javascript:;").search_hot__link.js_smartbox_search.js_link
+										span.search_hot__number
+										span.search_hot__name
+										span.search_hot__listen
+									a(href="javascript:;").search_hot__link.js_smartbox_search.js_link
+										span.search_hot__number
+										span.search_hot__name
+										span.search_hot__listen
+									a(href="javascript:;").search_hot__link.js_smartbox_search.js_link
+										span.search_hot__number
+										span.search_hot__name
+										span.search_hot__listen
+									a(href="javascript:;").search_hot__link.js_smartbox_search.js_link
+										span.search_hot__number
+										span.search_hot__name
+										span.search_hot__listen
+					.search_history
+						dl.search_history__list
+							dt.search_history__tit 搜索历史
+								a(href="javascript:;").search_history__clear.js_smartbox_delete_all
+									i.icon_history_clear
+									span.icon_txt
+								dd.search_history_item
+		.header__opt
+			<!-- 未登录 -->
+			span.mod_top_login
+				a(href="").top_login__link.js_logined
+				a(href="javascript:;").top_login__link.js_login 登录
+				a(href="javascript:;").login__link.header__link.js_login 
+				a(href="javascript:;").mod_btn_green.top_login_btn_vip.js_openvip 开通绿钻豪华版
+				a(href="javascript:;").mod_btn.top_login__btn_vip.js_openmusic 开通付费包
+			<!-- 用户信息 -->
+			.popup_user				
+
+style.
+	.mod_header {
+		background-color: #fff;
+		position: relative;
+		z-index: 4;
+	}
+	.mod_header .section_inner {
+		padding-top: 90px;
+	}
+	.qqmusic_title {
+		position: absolute;
+		left: 0;
+		top: 22px;
+	}
+	.qqmusic_logo {
+		width: 170px;
+		height: 46px;
+	}
+	.mod_top_nav {
+		position: absolute;
+		left: 198px;
+		top: 0;
+	}
+	.top_nav__item {
+		float: left;
+		margin-right: -5px;
+	}
+	.top_nav__link {
+		display: block;
+		padding: 0 20px;
+		line-height: 90px;
+		height: 90px;
+		text-align: center;
+		font-size: 18px;
+	}
+	.top_nav__link--current,
+	.top_nav__link--current:hover {
+		background-color: #31c27c;
+		color: #fff;
+	}
+	.mod_top_subnav {
+		height: 51px;
+		line-height: 51px;
+		border-top: 1px solid #f2f2f2;
+		padding-left: 230px;
+	}
+	.top_subnav__item {
+		float: left;
+		font-size: 15px;
+		color: #c1c1c1;
+		margin-right: 47px;
+	}
+	.top_subnav__link {
+		display: block;
+	}
+	.mod_top_search {
+		position: absolute;
+		top: 0;
+		right: 284px;
+	}
+	.mod_search_input {
+		border: 1px solid #c9c9c9;
+		padding: 0 33px 0 11px;
+		line-height: 36px;
+		height: 36px;
+		margin-top: 26px;
+		position: relative;
+		border-radius: 3px;
+		background-color: #fff;
+		-webkit-transition: width .6s ease-out;
+				transition: width .6s ease-out;
+	}
+	.search_input__input {
+		width: 174px;
+		height: 36px;
+		border: 0 none;
+		font-size: 14px;
+		background: 0 0;
+		-webkit-transition: width .6s ease-out,visibility .6s 1ms ease-out;
+				transition: width .6s ease-out,visibility .6s 1ms ease-out;
+	}
+	.search_input__input:focus {
+		outline: none;
+	}
+	.search_input__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: 0 none;
+		width: 38px;
+		height: 35px;
+		overflow: visible;
+		background: 0 0;
+	}
+	.icon-search {
+		position: absolute;
+		top: 50%;
+		right: 11px;
+		margin-top: -8px;
+		width: 16px;
+		height: 16px;
+		background-image: url(../images/search.png);
+		background-image: -webkit-image-set(url());
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.icon-txt {
+		font: 0/0 a;
+	}
+	.mod_search_other,
+	.mod_search_result {
+		max-height: 0;
+		visibility: hidden;
+		-webkit-transition: max-height .6s ease-out,visibility 1ms .6s;
+				transition: max-height .6s ease-out,visibility 1ms .6s;
+	}
+	.mod_search_other {
+		position: absolute;
+		top: 63px;
+		left: 0;
+		background: #fff;
+		width: 218px;
+		border: 1px solid #c9c9c9;
+		z-index: 8;
+		text-align: left;
+		font-size: 14px;
+		line-height: 36px;
+	}
+	.search_hot {
+		padding: 5px 0;
+	}
+	.search_hot__tit {
+		display: none;
+	}
+	.search_hot__link {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.search_hot__link span {
+		cursor: pointer;
+	}
+	.search_hot__number {
+		color: #ff4222;
+		float: left;
+		width: 18px;
+	}
+	.search_hot__name {
+		float: left;
+		color: #333;
+		max-width: 140px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.search_hot__listen {
+		float: right;
+		color: #999;
+		font-size: 12px;
+	}
+	.search_history {
+		padding: 5px 0;
+		border-bottom: 1px solid #f2f2f2;
+	}
+	.search_history__link,
+	.search_history__tit {
+		padding-left: 11px;
+	}
+	.search_history__tit {
+		color: #999;
+		position: relative;
+	}
+	.search_history__clear {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 36px;
+		font-size: 2px;
+		text-align: center;
+	}
+	.icon_history_clear {
+		position: absolute;
+		top: 50%;
+		right: 11px;
+		margin-top: -8px;
+		width: 16px;
+		height: 16px;
+	}
+	.header__opt {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 90px;
+		line-height: 90px;
+	}
+	.mod_top_login {
+		font-size: 0;
+		height: 90px;
+		line-height: 90px;
+	}
+	.top_login__link {
+		position: relative;
+		font-size: 16px;
+		float: left;
+		width: 38px;
+		margin-right: 10px;
+		text-align: center;
+	}
+	.mod_btn,
+	.mod_btn_green {
+		border-radius: 2px;
+		font-size: 14px;
+		margin-right: 6px;
+		padding: 0 23px;
+		height: 38px;
+		line-height: 38px;
+		display: inline-block;
+		white-space: nowrap;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.mod_btn {
+		border: 1px solid #c9c9c9;
+		color: #333;
+	}
+	.top_login_btn_vip {
+		line-height: 39px;
+	}
+	.top_login_btn_vip {
+		margin-top: 24px;
+		padding: 0 9px;
+		margin-left: 10px;
+		margin-right: 0;
+		font-size: 13px;
+	}
+	.mod_btn_green {
+		border: 1px solid #31c27c;
+		background-color: #31c27c;
+		color :#fff;
+	}

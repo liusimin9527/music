@@ -4,41 +4,33 @@ var music = {
 	index: 0,               //下标
 
 	/**
-	 * 初始化
-	 *
-	 *
-	 *
+	 * [init description]
+	 * @return {[type]} [description]
 	 */
 	init: function () {
 		this.musicDom = document.createElement('audio');
-		body.appendChild(this.musicDom);
-
-		return this.musicDom;
+		document.body.appendChild(this.musicDom);
 	},
 
 	/**
-	 *
-	 *
-	 *
+	 * 增加音乐
+	 * @param {[]} src []
 	 */
 	addMusic: function (src) {
 		this.songs.push(src);
 	},
 
 	/**
-	 * 获得歌曲名
-	 * 
-	 *
+	 * 获取歌曲名
+	 * @return {[type]} [description]
 	 */
 	getSongName: function () {
 		
 	},
 
 	/**
-	 *
-	 *
-	 *
-	 *
+	 * 播放音乐
+	 * @return {[type]} [description]
 	 */
 	play: function () {
 

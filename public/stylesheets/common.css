@@ -1,0 +1,46 @@
+body {
+	min-width: 1240px;
+	overflow-y: scroll;
+}
+body ::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-corner {
+	background-color: #535353;
+}
+body ::-webkit-scrollbar-thumb {
+	background-color: #ddd;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background: 0 0;
+}
+li {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #31c27c;
+}
+img {
+	border: 0 none;
+}
+.main, 
+.section_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.icon_txt {
+	font: 0/0 a;
+}

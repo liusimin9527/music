@@ -1,0 +1,57 @@
+extends layout
+
+block content
+	//- include ./public/head.jade
+
+	//- #container
+	//- 	.musicBox
+	//- 		#lry-show 听说白雪公主在逃跑
+	//- 	.musicPlayer
+	//- 		.player-left
+	//- 			button#prev
+	//- 			button#play
+	//- 			button#next
+	//- 		.player-middle
+	//- 			.song-info
+	//- 				span#song-name 童话镇-萧忆情.mp3
+	//- 				span#current-time 00:00
+	//- 				span.or /
+	//- 				span#duration-time 04:10
+	//- 			.process
+	//- 				.process-bar
+	//- 				.bar
+	//- 				button.bar-btn
+	//- 		.player-right
+	//- include ./public/foot.jade
+	h1.player_logo
+		a(href="", target="_blank")
+			img(src="").player_logo__pic
+	.mod_player_login
+		.player_login_
+			a(href="javascript:;").player_login__link
+			a.player_login__out.js_logout 退出
+			a.player_login__link
+				span.player_login__txt 设置
+	.mod_player
+		.player__hd
+		.player__bd
+			.player_style_normal.js_full_box
+			.mod_songlist_toolbar
+				a(href="javascript:;").mod_btn.js_all
+					i.mod_btn_green__icon_like 收藏
+					span.mod_btn__border
+				a(href="javascript:;").mod_btn.js_all
+					i.mod_btn_green__icon_add 添加到
+					span.mod_btn__border
+				a(href="javascript:;").mod_btn.js_all
+					i.mod_btn_green__icon_down 下载
+					span.mod_btn__border
+				a(href="javascript:;").mod_btn.js_all
+					i.mod_btn_green__icon_delete 删除
+					span.mod_btn__border
+				a(href="javascript:;").mod_btn.js_all
+					i.mod_btn_green__icon_clear 清空列表
+					span.mod_btn__border
+			.sb_scrollable.sb_main.sb_viewport
+				.sb_overview
+		.player__ft

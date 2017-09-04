@@ -5,12 +5,14 @@ EventUtil.addHandler(window, 'load', function() {
 	var play = document.getElementById('play');
 	var next = document.getElementById('next');
 	var songName = document.getElementById('song-name');
-	
-	//music.init();   //初始化
-	//music.add();    
 
-	EventUtil.addHandler(searchBtn, 'click', function () {
-		console.log('1111111111');
-		console.log(searchText.value);
+	music.init(); //初始化
+	music.addMusic();
+
+	EventUtil.addHandler(searchBtn, 'click', function() {
+		AjaxUtil.get('/music' + searchText.value, function() {
+
+			//location.href = '/music';
+		});
 	});
 });

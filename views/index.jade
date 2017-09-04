@@ -1,30 +1,543 @@
-extends layout
+doctype html
+html
+	head
+		title #{title}	
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/common.css')
+		link(rel='stylesheet', href='/stylesheets/index.css')
+		link(rel='stylesheet', href='/stylesheets/player.css')
+	body.os_mac
+		include ./public/head.jade
+	//-新碟首发
+	.mod_index.mod_index--new.mod_slide_box#albumlist_box
+		.section_inner
+			.index__hd
+				h2.index__tit
+					i.index__tit_sprite
+					i.icon_txt 新碟首发
+				i.index__line.index__line--left
+				i.index__line.index__line--right
+			a.index__more.index__more--white.js_album_more 全部
+				i.icon_index_arrow
+			.mod_index_tab
+				a(href="").index_tab__item.js_tab 内地
+				a(href="").index_tab__item.js_tab 港台
+				a(href="").index_tab__item.js_tab 欧美
+				a(href="").index_tab__item.js_tab 韩国
+				a(href="").index_tab__item.js_tab 日本
+			.mod_playlist.mod_slide
+				ul.playlist__list.slide__list#albumlist
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+					li.playlist__item.slide__item
+						.playlist__item_box
+							.play_list__cover.mod_cover
+								a(href="").js_album
+									img(alt="").playlist__pic
+									i.mod_cover__mask
+									i.mod_cover__icon_play.js_play
+							h4.playlist__title
+								span.playlist__title_txt
+									a(href="").js_album
+								a(href="jacascript:;").js_ablumlist_more
+									span.icon_txt gen 更多
+							.playlist__author
+			.mod_slide_switch.js_switch
+				a(href="javascript:;").js_jump.slide_switch__item
+					i.slide_switch__bg
+					i.icon_txt
+				a(href="javascript:;").js_jump.slide_switch__item
+					i.slide_switch__bg
+					i.icon_txt
+				a(href="javascript:;").js_jump.slide_switch__item
+					i.slide_switch__bg
+					i.icon_txt
+				a(href="javascript:;").js_jump.slide_switch__item
+					i.slide_switch__bg
+					i.icon_txt
+		.mod_slide_action
+			.slide_action.slide_action--left
+				a(href="javascript:;").slide_action__btn.slide_action__btn--left.js_jump
+					i.icon_txt 上一页
+					i.slide_action__arrow.slide_action__arrow--left
+			.slide_action.slide_action--right
+				a(href="javascript:;").slide_action__btn.slide_action__btn--right.js_jump
+					i.icon_txt 下一页
+					i.slide_action__arrow.slide_action__arrow--right
+	//- 精彩推荐
+	.mod_index.mod_index--event.mod_slide_box#focus
+		.section_inner
+			.index__hd
+				h2.index__tit
+					i.index__tit_sprite
+					i.icon_txt 精彩推荐
+				i.index__line.index__line--left
+				i.index__line.index__line--right
+			.mod_event.mod_slide.mod_focus--animate
+				ul.event_list.slide__list
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+					li.event_list__item.slide__item
+						a(href="javascript:;").event_list__link.js_focus__jump
+							img(alt="").event_list_pic
+		.mod_slide_action
+			.slide_action.slide_action--left
+				a(href="javascript:;").slide_action__btn.slide_action__btn--left
+					i.icon_txt 上一页
+					i.slide_action__arrow.slide_action__arrow--left
+			.slide_action.slide_action--right
+				a(href="javascript:;").slide_action__btn.slide_action__btn--right
+					i.icon_txt 下一页
+					i.slide_action__arrow.slide_action__arrow--right
+	//- 排行榜
+	.toplist_box
+		.mod_index.mod_index--top.mod_slide_box
+	//- 热门歌单
+	include ./public/foot.jade
+	include ./public/bottom.jade
+	style.
+		.mod_index {
+			position: relative;
+		}
+		.mod_index--new {
+			height: 734px;
+			background: #000 url(images/bg_index_new.jpg) 50% 0 repeat-x;
+		}
+		.mod_index .section_inner {
+			z-index: 2;
+			overflow: hidden;
+		}
+		.main,
+		.section_inner {
+			max-width: 1200px;
+			margin: 0 auto;
+			position: relative;
+		} 
+		.mod_index--new .index__hd {
+			padding-top: 80px;
+			margin-bottom: 43px;
+		}
+		.index__hd {
+			position: relative;
+			width: 490px;
+			height: 48px;
+			margin: 0 auto 50px;
+		}
+		.index__tit {
+			font-weight: 400;
+			text-align: center;
+		}
+		.mod_index--new .index__tit_sprite {
+			width: 193px;
 
-block content
-	header
-		.search
-			input#search-text(type='text', placeholder='请输入歌手或歌曲名')
-			button#search-btn
-	.container
-		.musicBox
-			#lry-show 听说白雪公主在逃跑
-		.musicPlayer
-			.player-left
-				button#prev
-				button#play
-				button#next
-			.player-middle
-				.song-info
-					span#song-name 童话镇-萧忆情.mp3
-					span#current-time 00:00
-					span.or /
-					span#duration-time 04:10
-				.process
-					.process-bar
-					.bar
-					button.bar-btn
-			.player-right
-	
-	script(type='javascript', src='/javascripts/util.js')
-	script(type='javascript', src='/javascripts/music.js')
-	script(type='javascript', src='/javascripts/main.js')
+		}
+		.index__tit_sprite {
+			display: block;
+			margin: 0 auto;
+			height: 48px;
+			background-image: url(images/index_tit.png);
+			background-image: -webkit-image-set(url(images/index_tit.png));
+		}
+		.mod_index--new .index__line {
+			top: 104px;
+		}
+		.index__line {
+			position: absolute;
+			top: 104px;
+			width: 72px;
+			height: 1px;
+			opacity: .1;
+			filter: alpha(opacity=10);
+			background-color: #000;
+		}
+		.index__line--left {
+			left: 0;
+		}
+		.index__line--right {
+			right: 0;
+		}
+		.index__more--white {
+			font-size: 15px;
+			color: #fff;
+		}
+		.index__more {
+			position: absolute;
+			right: 0;
+			top: initial;
+		}
+		.index__more--white .icon_index_arrow {
+			background-position: -40px -260px;
+		}
+		.icon_index_arrow {
+			display: inline-block;
+			width: 7px;
+			height: 12px;
+			background-image: url(images/);
+			background-image: -webkit-image-set(url());
+			margin-left: 6px;
+		}
+		.mod_slide_action {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		.slide_action {
+			position: absolute;
+			top: 0;
+			width: 50%;
+			height: 100%;
+		}
+		.slide_action--left,
+		.slide_action__btn--left {
+			left: 0;
+		}
+		.slide_action__btn--left {
+			transform: translateX(-100%);
+		}
+		.slide_action__btn {
+			position: absolute;
+			top: 50%;
+			margin-top: -54px;
+			width: 72px;
+			height: 108px;
+			background: rgba(153,153,153,.4);
+			opacity: 0;
+			transition-property: opacity, transform;
+			transition-duration: .5s;
+			z-index: 2;
+		}
+		.slide_action__arrow {
+			position: absolute;
+			top: 50%;
+			margin-top: -9px;
+			background-image: url(images/icon_sprite.png);
+			background-image: -webkit-image-set(url(images/icon_sprite.png));
+			width: 11px;
+			height: 18px;			
+		}
+		.slide_action_arrow--left {
+			left: 28px;
+			background-position: -180px 0;
+		}
+		.slide_action_arrow--right {
+			right: 28px;
+			background-position: -180px 0;
+		}
+		.mod_index_tab {
+			height: 50px;
+			text-align: center;
+			font-size: 0;
+		}
+		.index_tab__item {
+			display: inline-block;
+			font-size: 16px;
+			margin: 0 35px;
+			color: #fff;
+			opacity: .5;
+			filter: alpha(opacity=50);
+		}
+		.index_tab__item--current,
+		.index_tab__item:hover {
+			color: #fff;
+			opacity: 1;
+			filter: none;
+		}
+		.mod_playlist {
+			text-align: center;
+		}
+		.mod_slide {
+			overflow: hidden;
+			margin-bottom: 25px;
+		}
+		.mod_playlist {
+			overflow: hidden;
+		}
+		.mod_index--new .mod_slide_switch {
+			bottom: 24px;
+		}
+		.mod_slide_switch {
+			width: 100%;
+			text-align: center;
+			font-size: 0;
+		}
+		.slide_switch__item {
+			display: inline-block;
+			width: 30px;
+			height: 2px;
+			padding: 10px 0;
+			margin: 0 5px;
+		}
+		.mod_index--event .section_inner {
+			height: 610px;
+		}
+		.mod_index--event .index__tit_sprite {
+			width: 193px;
+			background-position: 0 -240px;
+		}
